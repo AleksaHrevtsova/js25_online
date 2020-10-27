@@ -15,3 +15,9 @@
 //      .sort  ((a, b)=> b - a) - от большего к меньшему
 //      .sort()                 - в алфавитном порядке
 //      .sort().reverse()       - в обратном алфавитному порядку
+import data from '../data/objects.js'
+console.log(data)
+
+console.log(data.map(el=>{
+ return el.id
+}))
