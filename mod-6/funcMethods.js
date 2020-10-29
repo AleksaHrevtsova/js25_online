@@ -97,7 +97,7 @@ const reverseTags = data.map(el=>el.tags).sort().reverse()
 const searchFriend = (array, value) => array.filter(({tags})=> tags.includes(value)).map(el=>el.id)
 
 // console.log(searchFriend(data, 'lake'))
-
+dccfsdzv
 
 // ex 10
 const uniqueTags = function(arr){
