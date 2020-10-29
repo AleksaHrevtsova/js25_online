@@ -3,12 +3,13 @@ console.log(data)
 
 //  ФУНКЦИОНАЛЬНЫЕ МЕТОДЫ МАССИВОВ
 // array.reduce((acc, element, idx, array)=>{}, 0||{}||[]) - что угодно
-const reduceData = data.reduce((acc, elem) => {
+const reduceData = data.reduce((acc, elem) =>{
   const tags = elem.tags.split(', ')
   // console.log(acc)
  acc.push(...tags)
  return acc
-}, [])
+}
+, [])
 // console.log(reduceData)
 
 //      .map   (( - , element, idx, array)=>{}) - []
@@ -16,7 +17,7 @@ const mapData = data.map((el)=>el.type)
 // console.log(mapData)
 
 //      .filter(( - , element, idx, array)=>{}) - []
-const filterData1 = data.filter((lm)=> lm.tags.split(', ').includes('moon')
+const filterData1 = data.filter(lm => lm.tags.split(', ').includes('moon')
 // {
 //   const condition = lm.tags.split(', ').includes('moon')
 
@@ -47,10 +48,11 @@ function findElem(arr, id){
 //     .forEach(( - , element, idx, array)=>{}) - ничего, замена цикла for()
 const myArray = []
 
-data.forEach((el)=>{
+data.forEach((el, idx)=>{
   // console.log(el)
-  if(el.tags.includes('full moon'))
+  if(el.tags.includes('full moon')){
     myArray.push(el)
+  }
 })
 
 // console.log("myArray", myArray)
@@ -86,4 +88,23 @@ const reverseTags = data.map(el=>el.tags).sort().reverse()
 // console.log(reverseTags)
 
 
+// ex 8
 
+// const searchFriend = (array, value) => {
+//   return array.filter(({tags})=>{return tags.includes(value)}).map(el=>el.id)
+// }
+
+const searchFriend = (array, value) => array.filter(({tags})=> tags.includes(value)).map(el=>el.id)
+
+// console.log(searchFriend(data, 'lake'))
+
+
+// ex 10
+const uniqueTags = function(arr){
+return arr.reduce((acc, elem)=>{
+  acc.push(...elem.tags.split(" "))
+  return acc
+}, []).filter((tag, idx, arr)=>arr.indexOf(tag)===idx).sort()
+}
+
+console.log(uniqueTags(data))

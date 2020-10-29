@@ -85,3 +85,46 @@ console.log(myNewUser)
 // // console.log(func)
 // const arr = [1, 3, 5]
 // func.apply(myUser, arr)
+
+const myArrow = () =>{
+  console.log(`My arrow`)
+}
+
+console.dir(myArrow)
+
+const protObj = Object.create(null)
+console.log(protObj)
+protObj.name = 'aaaaaaaaaaaaaaaaaaa'
+
+// Деструктуризация
+
+const obj = {
+  alpha: {
+    betta: {
+      name: 'Sandra'
+    }
+  },
+  b: 2,
+  c: 3
+}
+
+console.log(obj.alpha.betta.name)
+
+const body = document.querySelector('body')
+console.dir(body.children[3].attributes[0].value)
+
+const { children }= body
+console.log(children)
+
+// const arr = []
+// console.log("arr",arr)
+
+// Чейнинг
+const myImg = Array.from(children).filter((el)=>{
+  if (el.nodeName === "IMG") return el
+  }).map(img => img.src)
+
+console.log(myImg)
+
+
+
