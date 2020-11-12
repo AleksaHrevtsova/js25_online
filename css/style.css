@@ -6,6 +6,15 @@ body {
   display: block;
   margin: 100px;
 }
-#img{
+#img {
   width: 50px;
+}
+
+.onFocus {
+  border: 4px solid green;
+  outline: none;
+}
+
+.onBlur {
+  border: 3px solid red;
 }

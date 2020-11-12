@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
   <title>lesson-2</title>
 </head>
 <body>
@@ -155,12 +156,12 @@
   <footer>
     <div>
       <form action="mailto:hrevtsova@yahoo.com">
-        <h2>онлайн-запись</h2>
-        <input type="text" placeholder="имя+">
-        <input type="text" placeholder="телефон+">
+        <h2 class="form-title">онлайн-запись</h2>
+        <input name="userName" type="text" placeholder="имя+">
+        <input name="userPhone" type="text" placeholder="телефон+">
         <textarea name="message" id="message" cols="40" rows="5">сообщение</textarea>
         <!-- <button type="submit">отправить</button> -->
-        <input type="button" value="отправить">
+        <input type="submit" value="отправить">
       </form>
       <div>
         <h2>контакты</h2>
@@ -186,5 +187,6 @@
   </footer>
 
   <script src="./dom.js" type="module"></script>
+  <script src="./events.js" type="module"></script>
 </body>
 </html>
