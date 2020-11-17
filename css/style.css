@@ -18,3 +18,10 @@ body {
 .onBlur {
   border: 3px solid red;
 }
+.red {
+  background: red;
+}
+
+.borderStyle {
+  border: 3px solid orange;
+}

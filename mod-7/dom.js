@@ -107,7 +107,7 @@ mainTitle.after(myNewImg);
 //                     afterend
 //                     afterbegin
 //                     beforebegin
-mainTitle.insertAdjacentHTML("afterend", myBtn);
+mainTitle.insertAdjacentElement("afterend", myBtn);
 // mainTitle.insertAdjacentHTML('beforebegin', myBtn)
 
 // mainTitle.insertAdjacentHTML('afterbegin', myBtn)

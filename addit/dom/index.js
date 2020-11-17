@@ -1,28 +1,3 @@
-// class Calculator {
-//   constructor() {
-//     this.firstNumber = '';
-//     this.secondNumber = '';
-//   }
-//   getFirst() {
-//     return (this.firstNumber = prompt(''));
-//   }
-//   getSecond() {
-//     return (this.secondNumber = prompt(''));
-//   }
-
-//   getValues() {
-//     this.getFirst();
-//     this.getSecond();
-
-//     return this.firstNumber, this.secondNumber;
-//   }
-// }
-// 3;
-// const myCalc = new Calculator();
-// console.log(myCalc);
-
-// console.log(myCalc.getValues());
-
 // ========== DOM ========
 const arr = [];
 const div = document.getElementById("boxes");
@@ -75,3 +50,27 @@ function onInputChange(event) {
 function onLicenseChange(event) {
   refs.btn.disabled = !event.currentTarget.checked;
 }
+
+// insertElem - доступ, куда встраивать
+
+// function(array)
+// 1 - img
+// 2 - a
+// 3 - li ==> [li, li, li]
+
+// 4 - ul
+
+// 5 - div
+
+// 6 - h2
+
+// 7 - p
+
+// 8 - span
+// 9 - p
+
+// 10 - input
+
+// 11 - article.append(h2, p, div, p, input)
+
+// встраиваем готовый article в insertElem
